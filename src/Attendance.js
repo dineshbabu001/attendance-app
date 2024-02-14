@@ -82,7 +82,9 @@ const Attendance = () => {
           </label>
         </div>
       ))}
-      <button onClick={handleSaveAttendance}>Save Attendance</button>
+      <button className="save-button" onClick={handleSaveAttendance}>
+        Save Attendance
+      </button>
     </div>
   );
 };
