@@ -4,7 +4,7 @@ import "./Attendance.css";
 
 const Attendance = () => {
   const [attendance, setAttendance] = useState(studentsData);
-  const [filter, setFilter] = useState("all"); // 'all', 'present', 'absent'
+  const [filter, setFilter] = useState("all");
 
   const handleToggle = (id) => {
     setAttendance((prevAttendance) =>
@@ -15,7 +15,6 @@ const Attendance = () => {
   };
 
   const handleSaveAttendance = () => {
-    // Implement save functionality (can be storing in local storage or making an API call)
     console.log("Attendance record saved:", attendance);
   };
 
